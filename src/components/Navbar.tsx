@@ -12,7 +12,7 @@ type NavbarProps = {
 export default function Navbar({ onToggle, isOpen }: NavbarProps) {
   return (
     <div className="container flex flex-col relative justify-between md:flex-row md:static">
-      <div className="flex justify-between relative">
+      <div className="flex justify-between items-center relative">
         <div>
           <a href="./index.html">
             <img src={logo} alt="Woud logo" />

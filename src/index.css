@@ -75,13 +75,13 @@ button {
 
   .container {
     max-width: none;
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   .container {
-    padding-inline: 1.25rem;
+    padding-inline: 1rem;
   }
 }
 
