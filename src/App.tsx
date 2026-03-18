@@ -1,10 +1,19 @@
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleOpen() {
+    setIsOpen((is) => !is);
+  }
+
   return (
     <>
-      <header className="py-6 h-18 bg-white border-b border-b-[#f2f2f2] overflow-hidden transition-[height] duration-300 ease-in-out fixed z-2000 w-full md:pt-5 md:pb-4 md:h-auto md:overflow-visible">
-        <Navbar />
+      <header
+        className={`py-6 ${isOpen ? "h-100" : "h-18"} bg-white border-b border-b-[#f2f2f2] overflow-hidden transition-[height] duration-500 ease-in-out fixed z-2000 w-full md:pt-5 md:pb-4 md:h-auto md:overflow-visible`}
+      >
+        <Navbar onToggle={handleOpen} isOpen={isOpen} />
       </header>
 
       <main>

@@ -29,18 +29,6 @@ footer .container > div,
   display: flex;
 }
 
-.one {
-  transform: rotate(45deg);
-}
-
-.two {
-  transform: rotate(-45deg) translate(4px, -4px);
-}
-
-.three {
-  display: none;
-}
-
 .hero {
   padding-top: 5rem;
 }
@@ -671,11 +659,6 @@ footer span {
 
 /* Mobile - Landcape CSS */
 @media screen and (max-width: 767px) {
-  .expand {
-    height: 400px;
-    transition: height 0.5s ease;
-  }
-
   .hero {
     padding-top: 6rem;
   }
