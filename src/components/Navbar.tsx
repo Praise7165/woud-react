@@ -4,10 +4,10 @@ import logo from "../assets/icons/woud.svg";
 import Hamburger from "./header/Hamburger";
 import NavLinks from "./header/NavLinks";
 
-type NavbarProps = {
+interface NavbarProps {
   onToggle: () => void;
   isOpen: boolean;
-};
+}
 
 export default function Navbar({ onToggle, isOpen }: NavbarProps) {
   return (

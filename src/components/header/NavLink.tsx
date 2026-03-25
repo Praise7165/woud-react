@@ -1,6 +1,6 @@
-type NavLinkProps = {
+interface NavLinkProps {
   text: string;
-};
+}
 
 export default function NavLink({ text }: NavLinkProps) {
   return (

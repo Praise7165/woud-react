@@ -1,7 +1,7 @@
-type HamburgerProps = {
+interface HamburgerProps {
   onToggle: () => void;
   isOpen: boolean;
-};
+}
 
 export default function Hamburger({ onToggle, isOpen }: HamburgerProps) {
   return (
