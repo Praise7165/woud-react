@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/header/Navbar";
+import Hero from "./components/Hero/hero";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ function App() {
       </header>
 
       <main>
-        <h1 className="text-red-500">God is the greatest</h1>
+        <Hero />
       </main>
 
       <footer></footer>

@@ -1,8 +1,8 @@
-import searchIcon from "../assets/icons/search.svg";
-import cartIcon from "../assets/icons/cart.svg";
-import logo from "../assets/icons/woud.svg";
-import Hamburger from "./header/Hamburger";
-import NavLinks from "./header/NavLinks";
+import searchIcon from "../../assets/icons/search.svg";
+import cartIcon from "../../assets/icons/cart.svg";
+import logo from "../../assets/icons/woud.svg";
+import Hamburger from "./Hamburger";
+import NavLinks from "./NavLinks";
 
 interface NavbarProps {
   onToggle: () => void;

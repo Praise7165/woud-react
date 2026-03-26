@@ -29,10 +29,6 @@ footer .container > div,
   display: flex;
 }
 
-.hero {
-  padding-top: 5rem;
-}
-
 .hero-container > div {
   max-width: 80%;
   margin: auto;
