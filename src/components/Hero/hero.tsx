@@ -1,4 +1,5 @@
 import Container from "../Container";
+import Button from "../Button";
 
 export default function Hero() {
   return (
@@ -13,8 +14,15 @@ export default function Hero() {
             our main goal for our customers.
           </p>
           <div>
-            <button className="main-button">Shop Now</button>
-            <button className="sec-button">Explore collection</button>
+            {/* class = main-button */}
+            <Button className="bg-[#dc2f02] hover:bg-[#cf3812] text-[whitesmoke] mr-4">
+              Shop Now
+            </Button>
+
+            {/* class = sec-button */}
+            <Button className="bg-transparent hover:bg-[#dc2f02] text-[#dc2f02] hover:text-[whitesmoke] border border-solid border-[#dc2f02]">
+              Explore Collections
+            </Button>
           </div>
         </div>
       </Container>
