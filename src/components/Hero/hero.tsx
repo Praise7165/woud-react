@@ -3,7 +3,7 @@ import Button from "../Button";
 
 export default function Hero() {
   return (
-    <section className="pt-24 md:pt-10">
+    <section className="pt-24">
       {/* has class 'hero-container' */}
       <Container className="flex">
         <div className="flex m-auto text-center flex-col items-center sm:max-w-[90%] md:max-w-[80%]">

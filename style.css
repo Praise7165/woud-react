@@ -616,10 +616,6 @@ footer span {
 
 /* Mobile - Landcape CSS */
 @media screen and (max-width: 767px) {
-  h1 {
-    font-size: 3rem;
-  }
-
   .marquee > div {
     display: flex;
     gap: 72px;
