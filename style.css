@@ -2,7 +2,6 @@
   padding: 96px 0;
 }
 
-.hero-container,
 .marquee > div,
 .header-content,
 .room > :first-child,
@@ -27,14 +26,6 @@ footer .container > div,
 .f-nav,
 #fnav-wrapper {
   display: flex;
-}
-
-.hero-container > div {
-  max-width: 80%;
-  margin: auto;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .hero-image {
@@ -65,11 +56,6 @@ footer .container > div,
 #sec-button:hover {
   background-color: #dc2f02;
   color: whitesmoke;
-}
-
-.hero p {
-  margin: 1rem auto 2rem;
-  max-width: 80%;
 }
 
 .marquee {
@@ -575,10 +561,6 @@ footer span {
 
 /* Tablet CSS */
 @media screen and (max-width: 991px) {
-  .hero-container > div {
-    max-width: 90%;
-  }
-
   .marquee > div {
     gap: 96px;
     animation: marquee-pad 10s linear infinite;
@@ -655,20 +637,8 @@ footer span {
 
 /* Mobile - Landcape CSS */
 @media screen and (max-width: 767px) {
-  .hero {
-    padding-top: 6rem;
-  }
-
   h1 {
     font-size: 3rem;
-  }
-
-  .hero p {
-    max-width: 100%;
-  }
-
-  .hero-container > div {
-    max-width: 100%;
   }
 
   .marquee > div {
