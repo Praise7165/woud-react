@@ -20,13 +20,15 @@ export default function Hero() {
             </Button>
 
             {/* class = sec-button */}
-            <Button className="bg-transparent hover:bg-[#dc2f02] text-[#dc2f02] hover:text-[whitesmoke] border border-solid border-[#dc2f02]">
+            <Button className="bg-transparent hover:bg-[#dc2f02] text-[#dc2f02] hover:text-[whitesmoke] border border-solid border-[#e0d1cd]">
               Explore Collections
             </Button>
           </div>
         </div>
       </Container>
-      <div className="hero-image"></div>
+
+      {/* class = hero-image */}
+      <div className="h-120 mt-14 bg-[url('././assets/images/heroImage.jpg')] bg-cover bg-center mx-auto lg:h-160"></div>
     </section>
   );
 }

@@ -37,17 +37,6 @@ footer .container > div,
   margin-top: 3.5rem;
 }
 
-.sec-button {
-  background-color: transparent;
-  color: #dc2f02;
-  border: 1px solid #dc2f02;
-}
-
-#sec-button:hover {
-  background-color: #dc2f02;
-  color: whitesmoke;
-}
-
 .marquee {
   background-color: #dc2f02;
   padding: 3rem 0;
