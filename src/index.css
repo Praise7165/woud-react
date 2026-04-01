@@ -51,6 +51,31 @@ body {
     color: #616161;
   }
 
+  @theme {
+    --animate-marquee: marquee 20s linear infinite;
+    --animate-marquee-mobile: marquee-mobile 25s linear infinite;
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(20%); /* Start off-screen */
+      }
+
+      100% {
+        transform: translateX(-100%); /* Move to the left */
+      }
+    }
+
+    @keyframes marquee-mobile {
+      0% {
+        transform: translateX(5%);
+      }
+
+      100% {
+        transform: translateX(-240%);
+      }
+    }
+  }
+
   @media screen and (min-width: 767px) {
     h1 {
       font-size: 3.25rem;

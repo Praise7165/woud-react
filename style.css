@@ -2,7 +2,6 @@
   padding: 96px 0;
 }
 
-.marquee > div,
 .header-content,
 .room > :first-child,
 .featured .header-content > :last-child,
@@ -28,21 +27,6 @@ footer .container > div,
   display: flex;
 }
 
-.hero-image {
-  background-image: url("./assets/heroImage.jpg");
-  height: 480px;
-  max-width: 1440px;
-  background-size: cover;
-  background-position: center;
-  margin-top: 3.5rem;
-}
-
-.marquee {
-  background-color: #dc2f02;
-  padding: 3rem 0;
-  overflow: hidden;
-}
-
 .marquee h2 {
   color: #fbfbfb;
   white-space: nowrap;
@@ -52,15 +36,6 @@ footer .container > div,
   justify-content: center;
   gap: 120px;
   animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(20%); /* Start off-screen */
-  }
-  100% {
-    transform: translateX(-100%); /* Move to the left */
-  }
 }
 
 @keyframes marquee-pad {

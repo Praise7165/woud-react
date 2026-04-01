@@ -1,9 +1,11 @@
 import { useState } from "react";
 import Navbar from "./components/header/Navbar";
 import Hero from "./components/Hero/hero";
+import Marquee from "./components/Marquee";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  // generics
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   function handleOpen() {
     setIsOpen((is) => !is);
@@ -19,6 +21,7 @@ function App() {
 
       <main>
         <Hero />
+        <Marquee />
       </main>
 
       <footer></footer>
