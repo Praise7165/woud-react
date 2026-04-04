@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/header/Navbar";
 import Hero from "./components/Hero/hero";
-import Marquee from "./components/Marquee";
+import Marquee from "./components/Marquee/Marquee";
 
 function App() {
   // generics

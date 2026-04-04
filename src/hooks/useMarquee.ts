@@ -1,12 +1,12 @@
 import { useRef, useEffect } from "react";
 import { MarqueeClass } from "../lib/animations/marquee";
 
-interface useMarqueeOptions {
+interface UseMarqueeOptions {
   speed?: number;
   pauseOnHover?: boolean;
 }
 
-export function useMarquee(options: useMarqueeOptions = {}) {
+export function useMarquee(options: UseMarqueeOptions = {}) {
   const { speed = 2, pauseOnHover = false } = options;
   const elementRef = useRef<HTMLDivElement>(null);
   const marqueeRef = useRef<MarqueeClass>();
