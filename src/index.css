@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-}
-
 @font-face {
   font-family: "Satoshi";
   src: url("https://drive.google.com/uc?export=view&id=1bdkQMhGCzbjaTBwXFsqbenBLSisAktgV")
@@ -15,13 +11,14 @@ html {
     "ital" 1; /* Variable font settings*/
 }
 
-body {
-  font-family: "Satoshi", sans-serif;
-  color: #121212;
-  font-size: 16px;
-}
-
 @layer base {
+  :root {
+    font-family: "Satoshi", sans-serif;
+    color: #121212;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
   a {
     text-decoration: none;
   }

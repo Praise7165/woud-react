@@ -2,7 +2,6 @@
   padding: 96px 0;
 }
 
-.header-content,
 .room > :first-child,
 .featured .header-content > :last-child,
 .product-wrapper,
@@ -38,27 +37,6 @@ footer .container > div,
   animation: marquee 10s linear infinite;
 }
 
-@keyframes marquee-pad {
-  0% {
-    transform: translateX(10%);
-  }
-
-  100% {
-    transform: translateX(-160%);
-  }
-}
-
-@keyframes marquee-mobile {
-  0% {
-    transform: translateX(5%);
-  }
-
-  100% {
-    transform: translateX(-240%);
-  }
-}
-
-.category,
 .about-us,
 .what-we-do,
 .process,
@@ -66,12 +44,6 @@ footer .container > div,
 .newsletter,
 footer {
   padding: 104px 0;
-}
-
-.header-content {
-  margin-bottom: 4rem;
-  align-items: flex-end;
-  gap: 104px;
 }
 
 .section-content {
@@ -108,12 +80,6 @@ footer {
   margin-bottom: 0;
   border-bottom: none;
   padding-bottom: 0;
-}
-
-.subheading {
-  color: #dc2f02;
-  line-height: 1.5;
-  font-weight: 500;
 }
 
 .room > :last-child {
@@ -520,7 +486,6 @@ footer span {
     animation: marquee-pad 10s linear infinite;
   }
 
-  .header-content,
   .section-content {
     display: flex;
     gap: 3rem;
@@ -600,12 +565,6 @@ footer span {
   .product-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     column-gap: 1rem;
-  }
-
-  .header-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
   }
 
   .section-content {

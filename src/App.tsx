@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/header/Navbar";
 import Hero from "./components/Hero/hero";
 import Marquee from "./components/Marquee/Marquee";
+import Category from "./components/Category/Category";
 
 function App() {
   // generics
@@ -22,6 +23,7 @@ function App() {
       <main>
         <Hero />
         <Marquee />
+        <Category />
       </main>
 
       <footer></footer>

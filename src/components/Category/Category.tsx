@@ -1,13 +1,18 @@
+import Container from "../Container";
+
 export default function Category() {
   return (
-    <section className="category">
-      <div className="container">
-        <div className="header-content">
-          <div>
-            <span className="subheading">Category</span>
+    <section className="category py-26">
+      <Container>
+        <div className="header-content flex mb-16 flex-col gap-4 md:gap-12 md:flex-row md:items-end md:justify-between lg:gap-26">
+          <div className="max-w-[50%]">
+            {/* class = subheading */}
+            <span className="text-[#dc2f02] leading-normal font-medium">
+              Category
+            </span>
             <h2>Shop By Category</h2>
           </div>
-          <p>
+          <p className="max-w-[50%]">
             Our pieces are made out of the most aesthetic looking wood. We
             produce the best furniture to meet our customers satisfaction.
           </p>
@@ -53,7 +58,7 @@ export default function Category() {
 
           <div id="placeholder-img"></div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
