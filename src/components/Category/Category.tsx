@@ -21,8 +21,8 @@ export default function Category() {
           </p>
         </div>
         {/* class = section-content */}
-        <div className="section-content border border-gray-200 flex flex-col gap-8 md:flex-row lg:gap-12">
-          <div className="flex border border-gray-200 gap-4 flex-col md:w-1/2">
+        <div className="section-content border flex flex-col gap-8 md:flex-row lg:gap-12">
+          <div className="flex gap-8 flex-col md:w-1/2">
             <Room>
               <span>Living room</span>
             </Room>
@@ -41,7 +41,7 @@ export default function Category() {
           </div>
 
           <div
-            className={`placeholder-img flex items-center h-100 rounded-lg overflow-hidden md:w-1/2 md:h-auto md:rounded-2xl`}
+            className={`placeholder-img border flex items-center h-100 rounded-lg overflow-hidden md:h-fit md:w-1/2 md:rounded-2xl`}
           >
             <img src={defaultImg} />
           </div>
