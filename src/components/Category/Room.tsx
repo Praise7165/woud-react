@@ -5,7 +5,7 @@ import arrow from "../../assets/icons/arrow.svg";
 }
 export default function Room({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex border border-b-[#f2f2f2] justify-between items-center pb-8">
+    <div className="flex border-b border-b-[#f2f2f2] justify-between items-center pb-8">
       {children}
       <img className="h-5" src={arrow} alt="arrow" />
     </div>

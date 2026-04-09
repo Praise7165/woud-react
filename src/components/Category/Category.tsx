@@ -20,9 +20,10 @@ export default function Category() {
             produce the best furniture to meet our customers satisfaction.
           </p>
         </div>
+
         {/* class = section-content */}
-        <div className="section-content border flex flex-col gap-8 md:flex-row lg:gap-12">
-          <div className="flex gap-8 flex-col md:w-1/2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
+          <div className="flex gap-8 flex-col">
             <Room>
               <span>Living room</span>
             </Room>
@@ -41,9 +42,13 @@ export default function Category() {
           </div>
 
           <div
-            className={`placeholder-img border flex items-center h-100 rounded-lg overflow-hidden md:h-fit md:w-1/2 md:rounded-2xl`}
+            className={`relative h-100 rounded-lg overflow-hidden  md:h-auto md:rounded-2xl`}
           >
-            <img src={defaultImg} />
+            <img
+              src={defaultImg}
+              alt="Image of sitting room"
+              className="absolute inset-0 object-cover w-full h-full"
+            />
           </div>
         </div>
       </Container>
