@@ -1,8 +1,23 @@
+import { useState } from "react";
+import rooms from "../../data/room";
 import Container from "../Container";
 import Room from "./Room";
 import defaultImg from "../../assets/images/default-img.jpg";
 
 export default function Category() {
+  const [onHover, setOnHover] = useState<null | number>(null);
+
+  function handleImgChange(id: number) {
+    setOnHover(id);
+  }
+
+  function handleMouseLeave() {
+    setOnHover(null);
+  }
+
+  const currentImg =
+    rooms.find((room) => room.id == onHover)?.image ?? defaultImg;
+
   return (
     <section className="category py-26">
       <Container>
@@ -23,29 +38,23 @@ export default function Category() {
 
         {/* class = section-content */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
-          <div className="flex gap-8 flex-col">
-            <Room>
-              <span>Living room</span>
-            </Room>
-            <Room>
-              <span>Dining room</span>
-            </Room>
-            <Room>
-              <span>Kitchen</span>
-            </Room>
-            <Room>
-              <span>Bedroom</span>
-            </Room>
-            <Room>
-              <span>Office</span>
-            </Room>
-          </div>
+          <ul className="flex gap-8 flex-col">
+            {rooms.map((room) => (
+              <Room
+                key={room.id}
+                onMouseEnter={() => handleImgChange(room.id)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <span>{room.name}</span>
+              </Room>
+            ))}
+          </ul>
 
           <div
             className={`relative h-100 rounded-lg overflow-hidden  md:h-auto md:rounded-2xl`}
           >
             <img
-              src={defaultImg}
+              src={currentImg}
               alt="Image of sitting room"
               className="absolute inset-0 object-cover w-full h-full"
             />
@@ -54,18 +63,4 @@ export default function Category() {
       </Container>
     </section>
   );
-}
-
-{
-  /* 
-            <div className="room">
-              <div className="last">
-                <span>Office</span>
-                <img src={arrow} alt="arrow" />
-              </div>
-              <div className="room-image room-five"></div>
-            </div>
-          </div>
-          <div id="placeholder-img"></div>
-          */
 }
