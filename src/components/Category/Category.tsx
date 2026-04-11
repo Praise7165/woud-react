@@ -1,11 +1,11 @@
 import { useState } from "react";
 import rooms from "../../data/room";
 import Container from "../Container";
-import Room from "./Room";
+import Rooms from "./Rooms";
 import defaultImg from "../../assets/images/default-img.jpg";
 
 export default function Category() {
-  const [onHover, setOnHover] = useState<null | number>(null);
+  const [onHover, setOnHover] = useState<number | null>(null);
 
   function handleImgChange(id: number) {
     setOnHover(id);
@@ -38,17 +38,10 @@ export default function Category() {
 
         {/* class = section-content */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
-          <ul className="flex gap-8 flex-col">
-            {rooms.map((room) => (
-              <Room
-                key={room.id}
-                onMouseEnter={() => handleImgChange(room.id)}
-                onMouseLeave={handleMouseLeave}
-              >
-                <span>{room.name}</span>
-              </Room>
-            ))}
-          </ul>
+          <Rooms
+            onMouseEnter={handleImgChange}
+            onMouseLeave={handleMouseLeave}
+          />
 
           <div
             className={`relative h-100 rounded-lg overflow-hidden  md:h-auto md:rounded-2xl`}
