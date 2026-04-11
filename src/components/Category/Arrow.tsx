@@ -8,9 +8,8 @@ const Arrow = forwardRef<SVGPathElement>((props, ref) => {
       height="32"
       viewBox="0 0 32 32"
       fill="none"
-      className="transition-transform duration-300 ease-linear"
     >
-      <g id="Frame" transformOrigin="center">
+      <g id="Frame">
         <path
           id="Vector"
           d="M6 26.5L26 6.5M26 6.5H11M26 6.5V21.5"
@@ -19,6 +18,8 @@ const Arrow = forwardRef<SVGPathElement>((props, ref) => {
           strokeLinecap="round"
           strokeLinejoin="round"
           ref={ref}
+          transform-origin="center"
+          className="border transition-transform duration-300 ease-linear"
         />
       </g>
     </svg>
