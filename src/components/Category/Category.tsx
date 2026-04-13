@@ -19,7 +19,7 @@ export default function Category() {
     rooms.find((room) => room.id == onHover)?.image ?? defaultImg;
 
   return (
-    <section className="category py-26">
+    <section className="py-26">
       <Container>
         {/* class = header-content */}
         <div className="flex mb-16 flex-col gap-4 md:gap-12 md:flex-row md:items-end md:justify-between lg:gap-26">
