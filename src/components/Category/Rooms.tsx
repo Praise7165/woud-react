@@ -1,4 +1,4 @@
-import rooms from "../../data/room";
+import rooms from "../../../data/room";
 import Room from "./Room";
 
 interface RoomsProps {

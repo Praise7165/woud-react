@@ -1,5 +1,5 @@
 import { useState } from "react";
-import rooms from "../../data/room";
+import rooms from "../../../data/room";
 import Container from "../Container";
 import Rooms from "./Rooms";
 import defaultImg from "../../assets/images/default-img.jpg";

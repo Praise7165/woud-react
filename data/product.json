@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Grey Low Armchair",
+      "description": "Elegant minimalist design with premium grey fabric and a sleek swivel base.",
+      "price": 20000,
+      "image": "./assets/product1.png"
+    },
+    {
+      "id": 2,
+      "title": "Counter Stool",
+      "description": "A perfect height stool featuring ergonomic support and a durable plywood frame.",
+      "price": 10000,
+      "image": "./assets/product2.png"
+    },
+    {
+      "id": 3,
+      "title": "Cane Armchair",
+      "description": "Classic hand-woven cane textures paired with modern structural support.",
+      "price": 8000,
+      "image": "./assets/product3.png"
+    },
+    {
+      "id": 4,
+      "title": "Velvet Armchair",
+      "description": "Luxurious deep-pile velvet upholstery for a sophisticated living space accent.",
+      "price": 25000,
+      "image": "./assets/product4.png"
+    },
+    {
+      "id": 5,
+      "title": "Wooden Lounge Chair",
+      "description": "An iconic silhouette crafted from high-quality treated plywood for ultimate relaxation.",
+      "price": 20000,
+      "image": "./assets/product5.png"
+    },
+    {
+      "id": 6,
+      "title": "Bar Stool",
+      "description": "Industrial-inspired design featuring a swivel mechanism and footrest for comfort.",
+      "price": 10000,
+      "image": "./assets/product6.png"
+    },
+    {
+      "id": 7,
+      "title": "Wooden Chair",
+      "description": "Earth-toned rattan seat offering a natural, bohemian aesthetic to any dining room.",
+      "price": 12000,
+      "image": "./assets/product7.png"
+    },
+    {
+      "id": 8,
+      "title": "Lounge Armchair",
+      "description": "Heavy-duty sturdy wood construction with a wide seat designed for long-duration lounging.",
+      "price": 20000,
+      "image": "./assets/product8.png"
+    },
+    {
+      "id": 9,
+      "title": "Office Chair",
+      "description": "Professional-grade swivel chair with adjustable features for an ergonomic workspace.",
+      "price": 30000,
+      "image": "./assets/product9.png"
+    }
+  ]
+}

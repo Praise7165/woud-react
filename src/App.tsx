@@ -3,7 +3,7 @@ import Navbar from "./components/header/Navbar";
 import Hero from "./components/Hero/hero";
 import Marquee from "./components/Marquee/Marquee";
 import Category from "./components/Category/Category";
-import Featured from "./components/Featured";
+import Featured from "./components/Featured/Featured";
 
 function App() {
   // generics
