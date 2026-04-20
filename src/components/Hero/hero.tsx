@@ -15,14 +15,10 @@ export default function Hero() {
           </p>
           <div>
             {/* class = main-button */}
-            <Button className="bg-[#dc2f02] hover:bg-[#cf3812] text-[whitesmoke] mr-4">
-              Shop Now
-            </Button>
+            <Button className="mr-4">Shop Now</Button>
 
             {/* class = sec-button */}
-            <Button className="bg-transparent hover:bg-[#dc2f02] text-[#dc2f02] hover:text-[whitesmoke] border border-solid border-[#e0d1cd]">
-              Explore Collections
-            </Button>
+            <Button type="sec">Explore Collections</Button>
           </div>
         </div>
       </Container>

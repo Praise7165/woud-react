@@ -1,3 +1,5 @@
+import Button from "../Button";
+
 interface ProductCardProps {
   name: string;
   description: string;
@@ -19,8 +21,8 @@ export default function ProductCard({
   });
 
   return (
-    <div className="product-card bg-white p-4 rounded-lg flex-[00320px]">
-      <div className="flex items-center justify-center bg-[#fbfbfb] h-80 mb-4 rounded-lg">
+    <div className="product-card bg-white p-4 rounded-lg flex-[00320px] border border-[hsl(0,0%,92%)]">
+      <div className="flex items-center justify-center bg-[#fbfbfb] h-80 mb-4 -mx-4 -mt-4 rounded-lg">
         <img src={img} />
       </div>
       <div>
@@ -29,9 +31,9 @@ export default function ProductCard({
         <span className="block mt-3 mb-5 text-xl">
           {ngnFormat.format(price)}
         </span>
-        <button className="sec-button bg-transparent border border-[#dc2f02] text-[#dc2f02] py-1.5 px-2 rounded-lg">
+        <Button size="small" type="sec">
           Shop Now
-        </button>
+        </Button>
       </div>
     </div>
   );

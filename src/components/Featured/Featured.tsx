@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 
 export default function Featured() {
   return (
-    <section className="border py-26 bg-[#fbfbfb]">
+    <section className="py-26 bg-[#fbfbfb]">
       <Container>
         <div className="flex mb-16 flex-col gap-4 justify-between md:gap-12 md:flex-row md:items-end lg:gap-26">
           <div>
