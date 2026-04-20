@@ -11,6 +11,7 @@ export default function ProductCard({
   price,
   img,
 }: ProductCardProps) {
+  // format currency to naira properly
   const ngnFormat = new Intl.NumberFormat("en-NG", {
     style: "currency",
     currency: "NGN",
@@ -18,15 +19,19 @@ export default function ProductCard({
   });
 
   return (
-    <div className="product-card">
-      <div>
+    <div className="product-card bg-white p-4 rounded-lg flex-[00320px]">
+      <div className="flex items-center justify-center bg-[#fbfbfb] h-80 mb-4 rounded-lg">
         <img src={img} />
       </div>
       <div>
         <h3>{name}</h3>
         <p>{description}</p>
-        <span>{ngnFormat.format(price)}</span>
-        <button className="sec-button product-button">Shop Now</button>
+        <span className="block mt-3 mb-5 text-xl">
+          {ngnFormat.format(price)}
+        </span>
+        <button className="sec-button bg-transparent border border-[#dc2f02] text-[#dc2f02] py-1.5 px-2 rounded-lg">
+          Shop Now
+        </button>
       </div>
     </div>
   );

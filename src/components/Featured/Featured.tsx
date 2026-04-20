@@ -1,34 +1,8 @@
-import { useState, useEffect } from "react";
+import products from "../../data/product";
 import Container from "../Container";
 import ProductCard from "./ProductCard";
 
-interface ProductProps {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  img: string;
-}
-
 export default function Featured() {
-  const [products, setProducts] = useState<ProductProps[]>([]);
-  useEffect(() => {
-    async function fetchProducts() {
-      try {
-        const res = await fetch("http://localhost:8000/products");
-        const data = await res.json();
-
-        setProducts(data);
-      } catch (err) {
-        console.log(err);
-      }
-    }
-
-    fetchProducts();
-  }, []);
-
-  console.log(products);
-
   return (
     <section className="border py-26 bg-[#fbfbfb]">
       <Container>
@@ -50,7 +24,7 @@ export default function Featured() {
               name={product.title}
               description={product.description}
               price={product.price}
-              img={product.img}
+              img={product.image}
             />
           ))}
         </div>

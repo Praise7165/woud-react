@@ -13,7 +13,6 @@
 .review-details,
 .review-wrapper,
 .newsletter-wrapper,
-.product-card > :first-child,
 .blog-card > :first-child,
 .newsletter-wrapper > div,
 .newsletter form > div,
@@ -117,7 +116,6 @@ footer {
   column-gap: 1.5rem;
 }
 
-.product-card,
 .blog-card {
   background-color: white;
   padding: 1rem;
@@ -129,7 +127,6 @@ footer {
   padding: 0;
 }
 
-.product-card > :first-child,
 .blog-card > :first-child,
 .newsletter-wrapper,
 .process .container > :last-child,
@@ -140,7 +137,6 @@ footer {
   justify-content: center;
 }
 
-.product-card > :first-child,
 .blog-card > :first-child {
   background-color: #fbfbfb;
   height: 320px;
@@ -150,19 +146,6 @@ footer {
 
 .blog-card > :first-child {
   height: 272px;
-}
-
-.product-card span {
-  font-size: 1.25rem;
-}
-
-.product-card span {
-  display: block;
-  margin: 0.8rem 0 1.25rem;
-}
-
-.product-button {
-  padding: 0.4rem 0.5rem;
 }
 
 .blog-button {
