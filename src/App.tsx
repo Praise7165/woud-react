@@ -4,6 +4,7 @@ import Hero from "./components/Hero/hero";
 import Marquee from "./components/Marquee/Marquee";
 import Category from "./components/Category/Category";
 import Featured from "./components/Featured/Featured";
+import About from "./components/About/About";
 
 function App() {
   // generics
@@ -26,6 +27,7 @@ function App() {
         <Marquee />
         <Category />
         <Featured />
+        <About />
       </main>
 
       <footer></footer>

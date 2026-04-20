@@ -4,8 +4,6 @@
 
 .offering,
 .offerings,
-.trust-banner,
-.about-us .container,
 .what-we-do .container,
 .what-we-do .section-image,
 .controls,
@@ -27,7 +25,6 @@ footer .container > div,
   white-space: nowrap;
 }
 
-.about-us,
 .what-we-do,
 .process,
 .newsletter,
@@ -35,7 +32,6 @@ footer {
   padding: 104px 0;
 }
 
-.about-us .container > *,
 .what-we-do .container > *,
 .what-we-do .section-image > * {
   width: 50%;
@@ -46,7 +42,6 @@ footer {
   border-radius: 0.5rem;
 }
 
-.section-image,
 .what-we-do-image-1,
 .what-we-do-image-2,
 .process .container > :last-child,
@@ -157,29 +152,6 @@ footer {
   width: 100%;
 }
 
-.section-image {
-  width: 50%;
-}
-
-.about-us .section-image {
-  background-image: url("https://s3-alpha-sig.figma.com/img/e21e/f5e6/4c4541be55748076592014c901b4ff48?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pxkrQ88Fam0ZyavrKO1bPNLcqFqO8DynlyJKkBigD3jdAWBIOso2p9KwxZuKcXeN2bV9xAxJ4FvNyyKLuXIUI4mFfD1hHw3orEMqBIYIqX09T3kSD48KYxw4a4O0n23YbHJKx7LhCFk7kTutYCS-Qw~zNlJrtkaNgjognIeiN6BALk8BEarNWYZWq5ArvxTCFFvtcUn1Yy8eutN0dROSpfQnLFOpft~nNhdC3Rd0d1eB1R4V8XtD8M5ClX6gCwES1Z27L93iHFIh~FB1eQG1-KEHOEyig2VtAkYwTaugBwcPBJtSWpWpwUk1zem1mrk7Ngv1HYGTrtlH~ZBkuLrMDQ__");
-}
-
-.trust-banner {
-  gap: 2rem;
-  justify-content: space-between;
-  margin-top: 6rem;
-}
-
-.about-us .s-content div > p {
-  margin: 1.5rem 0 2.5rem;
-}
-
-.trust-banner h3 {
-  font-size: 2.5rem;
-}
-
-.about-us .container,
 .what-we-do .container {
   gap: 5rem;
   position: relative;
@@ -225,17 +197,6 @@ footer {
 
 .what-we-do-image-2 {
   background-image: url("https://s3-alpha-sig.figma.com/img/f43e/0a89/86dc34f75e39ad25a7d4de2f4d959fef?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m4bFReWbIkF6ofDr5JCC~jysOSALjIKuGwPqHIcfwwXADeKuGt4z8xAI5VQTIQ~hshvvlnsdlTQhmO2bAVc4EzhAa-tg~W-s18hPP-8cq7MTZxvgfV-37GY7dyzxEXba~HxRphmFrq0pffGFuZB4h1EKzm7rFk03zcbclCQEh8Lfk~F~GoXyo3lkjnNXukNHLVlH2~oPQUr7cWl~5HwViBMEbZwrqTkvhy2W8oN7WgyaMRN~o3jhLO4bLwJ5lwqtE1~hYs3lrwrK~rGjoqmEUOs7iBcqsQ4kl45gzlMzpStnaAlF1O12H99uSA8v11bwNG3hDjT8VfPdDAwemEN3zA__");
-}
-
-.f-star {
-  position: absolute;
-  height: 48px;
-  top: -32px;
-}
-
-.about-us .f-star {
-  left: 24px;
-  width: auto;
 }
 
 .what-we-do .f-star {
@@ -371,26 +332,9 @@ footer span {
     animation: marquee-pad 10s linear infinite;
   }
 
-  .trust-banner h3 {
-    font-size: 2rem;
-  }
-
-  .about-us .container {
-    gap: 2rem;
-  }
-
-  .trust-banner {
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
   .what-we-do .section-image {
     position: static;
     height: 400px;
-  }
-
-  .s-content {
-    order: 2;
   }
 
   .what-we-do .container {
@@ -431,23 +375,6 @@ footer span {
     display: flex;
     gap: 72px;
     animation: marquee-mobile 20s linear infinite;
-  }
-
-  .section-image {
-    height: 30rem;
-    width: auto;
-  }
-
-  .about-us .container {
-    flex-direction: column;
-  }
-
-  .trust-banner {
-    margin-top: 4rem;
-  }
-
-  .about-us .container > * {
-    width: auto;
   }
 
   .review {

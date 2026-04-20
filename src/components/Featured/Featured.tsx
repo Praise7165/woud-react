@@ -1,5 +1,6 @@
 import products from "../../data/product";
 import Container from "../Container";
+import HeadingTag from "../HeadingTag";
 import ProductCard from "./ProductCard";
 
 export default function Featured() {
@@ -8,9 +9,7 @@ export default function Featured() {
       <Container>
         <div className="mb-10 md:mb-16">
           <div>
-            <span className="text-[#dc2f02] leading-normal font-medium">
-              Products
-            </span>
+            <HeadingTag>Products</HeadingTag>
             <h2>Our Featured Products</h2>
           </div>
         </div>
